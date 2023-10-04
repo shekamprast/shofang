@@ -1,0 +1,17 @@
+max: 
+.LFB11: 
+        .cfi_startproc 
+        cmpl    %esi, %edi 
+        movl    %esi, %eax 
+        cmovge  %edi, %eax 
+        ret 
+        .cfi_endproc 
+.LFE11: 
+        .size   max, .-max 
+        .section        .rodata.str1.1,"aMS",@progbits,1 
+.LC0: 
+        .string "%d\n" 
+        .section        .text.startup,"ax",@progbits 
+        .p2align 4,,15 
+        .globl  main 
+        .type   main, @function 
